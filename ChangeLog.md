@@ -1,3 +1,3 @@
-# Changelog for cs194-spring13
+# Changelog for cis194-spring13
 
 ## Unreleased changes

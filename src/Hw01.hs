@@ -20,3 +20,16 @@ module Hw01 where
     | ((List.length xs) `mod` 2) == 1 = (2 * x) : doubleEveryOther xs
     | otherwise = x : doubleEveryOther xs
 
+  -- exercise 3
+  sumList :: [Integer] -> Integer
+  sumList = foldl (+) 0
+
+  sumDigits :: [Integer] -> Integer
+  sumDigits [] = 0
+  sumDigits xs = sumList (fmap (sumList . toDigits) xs)
+  
+  -- exercise 4
+  validate :: Integer -> Bool
+  validate n = (sumDigits (doubleEveryOther (toDigits n))) `mod` 10 == 0
+
+
