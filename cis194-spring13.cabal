@@ -27,6 +27,8 @@ library
   exposed-modules:
       Hw01
       Hw02
+      Hw03
+      Hw04
       Lib
       Log
   other-modules:
@@ -55,6 +57,8 @@ test-suite cis194-spring13-test
   other-modules:
       Hw01Spec
       Hw02Spec
+      Hw03Spec
+      Hw04Spec
       Paths_cis194_spring13
   hs-source-dirs:
       test

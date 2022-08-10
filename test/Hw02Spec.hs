@@ -1,6 +1,7 @@
 module Hw02Spec (spec) where
 
 import qualified Hw02 as SUT
+import qualified Log as SUT
 import Test.Hspec
 
 
