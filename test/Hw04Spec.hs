@@ -5,7 +5,7 @@ import Test.Hspec
 import Test.Hspec.QuickCheck
 
 spec :: Spec
-spec = describe "wholemeal programming" $ do
+spec = describe "Homework 4: wholemeal programming" $ do
   prop "fun1' behaves the same as fun1" $ \list ->
     SUT.fun1' list `shouldBe` SUT.fun1 list
 

@@ -5,7 +5,7 @@ import Test.Hspec
 
 
 spec :: Spec
-spec = describe "execise for hw01" $ do 
+spec = describe "Homework 1" $ do 
   it "validate credit card number correctly" $ do 
     SUT.validate 12312312312123 `shouldBe` False
     SUT.validate 4012888888881881 `shouldBe` True

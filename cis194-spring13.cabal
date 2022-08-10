@@ -1,6 +1,6 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.6.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 
@@ -25,18 +25,24 @@ source-repository head
 
 library
   exposed-modules:
+      ExprT
       Hw01
       Hw02
       Hw03
       Hw04
+      Hw05
+      Hw05VarExprT
       Lib
       Log
+      Parser
+      StackVM
   other-modules:
       Paths_cis194_spring13
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , containers
   default-language: Haskell2010
 
 executable cis194-spring13-exe
@@ -49,6 +55,7 @@ executable cis194-spring13-exe
   build-depends:
       base >=4.7 && <5
     , cis194-spring13
+    , containers
   default-language: Haskell2010
 
 test-suite cis194-spring13-test
@@ -59,6 +66,8 @@ test-suite cis194-spring13-test
       Hw02Spec
       Hw03Spec
       Hw04Spec
+      Hw05Spec
+      Hw05VarExprTSpec
       Paths_cis194_spring13
   hs-source-dirs:
       test
@@ -66,5 +75,6 @@ test-suite cis194-spring13-test
   build-depends:
       base >=4.7 && <5
     , cis194-spring13
+    , containers
     , hspec
   default-language: Haskell2010

@@ -5,7 +5,7 @@ import qualified Hw03 as SUT
 import Test.Hspec
 
 spec :: Spec
-spec = describe "hw03: code golf" $ do
+spec = describe "Homework 3: code golf" $ do
   it "hopscotch works as expected" $ do
     SUT.skips "ABCD" `shouldBe` ["ABCD", "BD", "C", "D"]
     SUT.skips "hello!" `shouldBe` ["hello!", "el!", "l!", "l", "o", "!"]
