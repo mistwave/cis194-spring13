@@ -31,7 +31,9 @@ library
       Hw03
       Hw04
       Hw05
+      Hw05Compiler
       Hw05VarExprT
+      Hw06
       Lib
       Log
       Parser
@@ -68,6 +70,7 @@ test-suite cis194-spring13-test
       Hw04Spec
       Hw05Spec
       Hw05VarExprTSpec
+      Hw06Spec
       Paths_cis194_spring13
   hs-source-dirs:
       test
